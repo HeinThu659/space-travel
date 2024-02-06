@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../style/registerjp.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand:wght@300&family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <title>サインアップ</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR  -->
+    <header class="navbar">
+      <a class="logo" href="../indexjp.html">
+        <span>宇宙旅行</span>
+        <i class="bx bx-rocket"></i>
+      </a>
+
+      <ul class="mynavbar">
+        <li><a href="../indexjp.html">ホーム</a></li>
+        <li>
+          <a href="planetsjp.html">惑星</a>
+          <ul class="submenu">
+            <li><a href="">地球</a></li>
+            <li><a href="planetmoonjp.html">月世界</a></li>
+            <li><a href="">水星</a></li>
+            <li><a href="">木星</a></li>
+            <li><a href="">火星</a></li>
+            <li><a href="">海王星</a></li>
+            <li><a href="">土星</a></li>
+            <li><a href="">天王星</a></li>
+            <li><a href="">金星</a></li>
+          </ul>
+        </li>
+        <li><a href="pricingjp.html">料金システム</a></li>
+        <li><a href="aboutusjp.html">宇宙旅行について</a></li>
+        <li><a href="#">言語</a>
+          <ul class="submenu">
+            <li><a href="register.html">English</a></li>
+            <li><a href="registerjp.html">日本語</a></li></ul>
+    </ul>
+
+      <div class="main">
+        <a href="loginjp.html" class="user"
+            ><i class="bx bxs-user"></i>ログイン</a
+          >
+          <a href="registerjp.html">サインアップ</a>
+        <div><i class="bx bx-menu" id="menu-icon"></i></div>
+      </div>
+    </header>
+
+    <!-- REGISTER BODY  -->
+    <div class="container">
+      <div class="glass">
+        <div class="card">
+          
+          <div class="title">
+            <h3>宇宙旅行</h3>
+            <h3 class="logo"><i class="bx bx-rocket"></i></h3>
+            <h3>会員カード</h3>
+          </div>
+          <div class="account-pic">
+            <img src="../img/register/account.png" alt="" width="100px">
+          </div>
+          <div class="chip">
+             <img src="../img/register/‎chip.png" alt="" />
+          </div>
+         
+          <div class="profile">
+            <!-- <h4 class="name child" id="name">Pyae Zin Phyo</h4>
+                    <h4 class="gender child">Male</h4>
+                    <h4 class="number child">09444200661</h4> -->
+            <ul class="profile-info">
+              <div class="name flex">
+                <strong>名前: </strong>
+                <li class="child" id="username"></li>
+              </div>
+              <div class="email flex">
+                <strong>メール: </s>
+                <li class="child" id="email"></li>
+              </div>
+              <!-- <li class="child" id="">Male</li> -->
+              
+            </ul>
+          </div>
+          <!-- <h2 id="serialno">4321-8764-4334-9888</h2> -->
+          <div class="payment">
+            <i class="bx bxl-visa"></i>
+            <i class="bx bxl-mastercard"></i>
+            <i class="bx bxl-paypal"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-amazon"></i>
+            <i class="bx bxl-apple"></i>
+          </div>
+        </div>
+
+        <!-- <div class="register">
+                <form action="">
+                    <div class="row">
+                        <label for=""><i class='bx bxs-user' ></i></label>
+                        <input type="text" name="username" id="name">
+                    </div>
+                    <div class="row">
+                        <label for=""><i class='bx bxs-envelope' ></i></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="row">
+                        <label for=""><i class='bx bxs-lock' ></i>
+                        </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="row">
+                        <label for=""><i class='bx bxs-lock' ></i>
+                        </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="row">
+                        <input type="checkbox">
+                        <label for="">I accept Terms&Condition</label>
+                    </div>
+                    <div class="row">
+                        <p>Have an account?<a href="">Login here</a></p>
+                    </div>
+                    <div class="row">
+                        <input type="submit" name="register" id="register" >
+                    </div>
+    
+                </form>
+            </div> -->
+        <!-- FORM STARTS  -->
+        <div class="form-wrapper">
+          <h2>サインアップ</h2>
+          <form action="" class="form">
+            <div class="text-inputs">
+              <div class="row name-box">
+                <label for=""><i class="bx bxs-user"></i></label>
+                <input
+                  type="text"
+                  name="username"
+                  id="uname"
+                  placeholder="ユーザー名"
+                  onkeyup="showname();"
+                />
+              </div>
+              <div class="row mail-box">
+                <label for=""><i class="bx bxs-envelope"></i></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="uemail"
+                  placeholder="メールアドレス"
+                  onkeyup="showemail();"
+                />
+              </div>
+              <div class="row psw-box">
+                <label for=""><i class="bx bxs-lock"></i> </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="パスワード"
+                />
+              </div>
+              <div class="row cpsw-box">
+                <label for=""><i class="bx bxs-lock"></i> </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="もう一度パスワード"
+                />
+              </div>
+            </div>
+            <div class="row chk-box">
+              <input type="checkbox" />
+              <label for="">利用規約に同意します。</label>
+            </div>
+            <div class="row button-box">
+              <button type="submit" id="register">サインアップ</button>
+            </div>
+            <div class="row link-box">
+              <p>会員？ <a href="loginjp.html">ログイン</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../script/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="../script/register.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 30,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+    <script type="text/javascript" src="../script/script.js"></script>
+  </body>
+</html>
