@@ -1,4 +1,6 @@
 # planet-travel
 A side project developed while learning. 
 Just a newbie learning things... nth special.
-Responsive? - No, but working on it.
+I mainly used HTML, CSS, JavaScript to create this WEB pages.
+Of course ,this is only an imaginary website which is about space traveling.
+
